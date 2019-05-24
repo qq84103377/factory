@@ -1,0 +1,392 @@
+.el-input__inner,
+.el-textarea__inner {
+    border-radius: 2px !important;
+    // min-width: 200px;
+    // width: 200px;
+}
+.el-date-table td.current:not(.disabled) {
+    background-color: #ff9c38 !important;
+    &::before {
+        display: none;
+    }
+}
+.el-date-table td.available:hover {
+    background-color: #ffe8d6;
+}
+// 撤销状态
+.el-table .cancel-row {
+    td {
+        color:#A2ABB8;
+    }
+}
+
+.el-table {
+    // fixed 时 样式重置
+    th.is-white-header {
+        // .el-table__header-wrapper {
+        background: #fff;
+        .cell:nth-of-type(1) {
+            background: #fff;
+        }
+        // }
+    }
+
+    &.is-fixed-header {
+        .el-table__fixed-header-wrapper thead div {
+            // background-color: #F5F7FA;
+            color: #97a5bd;
+        }
+        .el-table__row:last-child {
+            td {
+                border-bottom: none;
+            }
+        }
+        .el-table__fixed {
+            overflow: hidden;
+        }
+    }
+    // 去掉td padding
+    &.no-cell-padding {
+        .cell {
+            padding: 0;
+        }
+        th .cell {
+            padding: 0 10px;
+            color:#808080;
+            font-weight: bold;
+        }
+    }
+
+    &.no-background {
+         * {
+             background: none!important;
+         }
+        &,
+        tbody,
+        tr {
+            background: none;
+        }
+    }
+
+    &.no-border {
+        border: none;
+        &::before,
+        &::after {
+            display: none;
+        }
+        .el-table__fixed {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    // &.no-border-bottom,
+
+    // td 高度100%
+    .is-column-cell-block {
+        .cell {
+            height: 100%;
+            line-height: 38px;
+        }
+    }
+    // td 无有边norder
+    .is-no-border-right {
+        border-right: none;
+    }
+    // 去掉tr hover背景色
+    &.no-hover-highlight {
+        .el-table__row:hover {
+            > td {
+                background-color: transparent;
+            }
+        }
+        .el-table td {
+            background-color: transparent;
+        }
+        .el-table td .cell {
+            background-color: transparent;
+        }
+        .hover-row td {
+            background: transparent;
+        }
+    }
+    &.no-expanded-cell-padding {
+        .el-table__expanded-cell {
+            padding: 0;
+        }
+    }
+    td.no-tdborder-bottom {
+        box-shadow: none;
+    }
+    &.report-table {
+        .el-table__fixed-header-wrapper thead div {
+            // background-color: #F5F7FA;
+            color: #6381a6;
+        }
+        th {
+            height: 36px;
+            font-weight: 400;
+            background: #f7f9fc;
+            > .cell {
+                color: #6381a6;
+                background: #f7f9fc;
+            }
+        }
+    }
+}
+
+// el-popover
+.el-popover {
+    &.is-max-height {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    &.no-padding {
+        padding: 0;
+    }
+    &.hover-table-wrap {
+        width: 444px;
+        background-color: #95a0b9;
+        box-shadow: 0 4px 10px 0 rgba(0, 17, 51, 0.1);
+    }
+}
+
+// el-dialog
+.el-dialog {
+    &.nf-dialog {
+        .el-dialog__header {
+            padding: 16px 0 0;
+        }
+        .el-dialog__body {
+            padding-bottom: 16px;
+        }
+    }
+    &.nf-dialog-common {
+        &.nf-dialog--medium {
+            width: 80%;
+        }
+        .el-dialog__header {
+            padding: 16px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e6eaf0;
+            .el-dialog__title {
+                color: #3b3b3b;
+                font-size: 18px;
+                font-weight: 400
+            }
+        }
+        .el-dialog__footer,
+        .el-dialog__body {
+            padding: 16px 24px;
+        }
+        .el-dialog__footer {
+            border-top: 1px solid #e6eaf0;
+            .el-button{
+                font-size: 12px;
+                padding:7px 9px;
+            }
+        }
+    }
+    &.no-dialog-header {
+        .el-dialog__header {
+            display: none
+        }
+    }
+}
+.el-tabs__item {
+    font-size: 20px;
+    color: #a2abb8;
+    margin-bottom: 19px;
+}
+.el-tabs__item.is-active {
+    font-size: 20px;
+    color: #3b3b3b;
+}
+.el-tabs__active-bar {
+    background-color: #ffa914;
+}
+.el-tabs__header {
+    // border: none;
+    // margin: 0;
+}
+#staffSalaryReport .el-table th {
+    background-color: #fff;
+}
+#staffSalaryReport .el-table__header-wrapper thead div {
+    background-color: #fff;
+    background-color: #fff;
+}
+#staffSalaryReport .el-table__row:hover > td {
+    background-color: #fff !important;
+}
+#staffSalaryReport .el-table__expanded-cell {
+    padding: 0;
+}
+.el-radio__input.is-checked .el-radio__inner {
+    border-color: #ffa914 !important;
+    background: #ffa914 !important;
+}
+.el-checkbox .el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: #ffa914;
+}
+
+.el-checkbox__input.is-indeterminate .el-checkbox__inner
+{
+    background: #ffa914 !important;
+    border-color:#ffa914 !important;
+}
+// .el-select-dropdown__item.selected.hover {
+// background-color: #ffa914 !important;
+// }
+#lineReport .el-carousel__button {
+    width: 46px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #7b83db;
+}
+#lineReport .el-carousel__arrow {
+    opacity: 0;
+    cursor: auto;
+}
+#lineReport .el-carousel__arrow i {
+    cursor: auto;
+}
+
+//重置弹出层样式
+.custom-dialog{
+    font-size: 12px;
+    .el-form-item__label,
+    .el-textarea__inner,
+    .el-input__inner,
+    .el-checkbox__label{
+        font-size: 12px;
+    }
+    .el-dialog__header{
+        padding: 16px;
+        border-bottom: 1px solid #e6eaf0;
+        text-align: center;
+        .el-dialog__title{
+            font-size: 16px;
+            font-weight: normal;
+        }
+    }
+    .el-dialog__body>.el-form>.el-form-item:last-child{margin-bottom: 0}
+    //.el-form-item__content{
+    //    .el-input{
+    //        width: 95%;
+    //    }
+    //}
+    .el-dialog__footer{
+        padding: 12px 16px;
+        text-align: center;
+        border-top: 1px solid #e6eaf0;
+        .el-button{
+            width: 90px;
+            padding:9px;
+            font-size: 12px;
+            border-radius: 2px;
+            &.el-button--default{
+                color: #808080;
+            }
+            &.el-button--default:hover{
+                border-color: #adafb3;
+                background: #fafafa;
+            }
+            &.el-button--primary:hover{
+                background: #eb8f34;
+            }
+        }
+    }
+}
+.custom-dialog.tip-dialog{
+    .el-dialog--tiny {
+        min-width: 365px;
+        width: 365px;
+    }
+    .el-dialog__header{
+        border-bottom: none;
+    }
+    .el-dialog__body{
+        padding: 16px 20px 30px;
+        .icon{
+            margin-bottom: 30px;
+        }
+        .tip-text{
+            font-size: 14px;
+            line-height: 20px;
+            color: #3b3b3b;
+        }
+        .sub-tip-text{
+            font-size: 12px;
+            color: #a2abb8;
+            padding-top: 8px;
+        }
+    }
+}
+
+//重写单选select，disabled的选项样式（例如 select下的新建功能）
+.el-select-dropdown__item.is-disabled.selected,
+.el-select-dropdown__item.is-disabled.selected.hover{
+    background-color: #fff;
+}
+
+.el-select-dropdown__item{
+    font-size: 12px !important;
+}
+
+//ui要求12px相关重写
+.custom-table.el-table{
+    font-size: 12px;
+    &.tiny-row{
+        td{
+            height: 24px;
+            line-height: 18px;
+            &.no-padding>.cell{
+                line-height: 14px;
+            }
+        }
+    }
+    .el-input__inner{
+        font-size: 12px;
+    }
+
+    th,td{
+        height: 32px;
+        line-height: 22px;
+    }
+
+    .cell,  th > div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    td.no-padding>.cell{
+        padding-left: 0;
+        padding-right: 0;
+        line-height: 32px;
+        .action-list{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            .item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                cursor: pointer;
+                border-left: 1px solid rgb(223, 228, 236);
+                &:first-child{
+                    border-left: 0;
+                }
+                &.el-button + .el-button{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+
+}
+

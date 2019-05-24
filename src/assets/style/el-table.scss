@@ -1,0 +1,23 @@
+.el-table {
+    thead th {
+        height: 28px;
+        background: #F7F9FC;
+        font-size: 12px;
+        font-weight: bold;
+        color: #808080;
+    }
+
+    tbody tr td {
+        font-size: 12px;
+        height: 32px;
+        color: #3b3b3b;
+    }
+}
+.el-table__header-wrapper thead div {
+    background-color: #F7F9FC;
+    color: #808080;
+}
+.el-table__fixed-header-wrapper thead div {
+    color: #808080;
+    background-color: #F7F9FC;
+}

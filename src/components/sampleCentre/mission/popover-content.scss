@@ -1,0 +1,86 @@
+$--font-warning-color: #FF7F14;
+$--font-success-color: #23C811;
+$--font-error-color: #FA4150;
+$--font-remind-color: #5C67E6;
+
+.popover-content {
+    font-size: 14px;
+    line-height: 20px;
+    .empty-content {
+        text-align: center;
+    }
+    .margin-top-12 {
+        margin-top: 12px;
+    }
+    &__label {
+        font-size: 12px;
+        color: #A2ABB8;
+    }
+
+    &__btn {
+        color: #1CA1FF;
+        text-decoration: underline;
+        cursor: pointer;
+        &:active {
+            opacity: .7;
+        }
+    }
+
+    .node-name,
+    .node-status {
+        font-size: 16px;
+    }
+    .node-name {
+        font-weight: bold;
+    }
+    .icon-doac {
+        display: inline-block;
+        padding: 2px 10px;
+        font-size: 12px;
+        color: #d53900;
+        background: #ffe433;
+    }
+    .node-status {
+        color: #c2c2c2;
+        &.is-finish {
+            color: $--font-success-color;
+        }
+        &.is-delay {
+            color: $--font-error-color;
+        }
+        &.is-remain {
+            color: $--font-warning-color;
+        }
+        &.is-ongoing {
+            color: #1CA1FF
+        }
+    }
+    .node-remind {
+        &.is-remind {
+            color: $--font-remind-color;
+        }
+        &.is-warning {
+            color: $--font-warning-color
+        }
+        &.is-delay {
+            color: $--font-error-color;
+        }
+    }
+
+    .node-text .charger-item:not(:last-child)::after {
+        content: '、'
+    }
+
+    .report-btn {
+        width: 80px;
+        height: 32px;
+        margin-top: 12px;
+        border-radius: 2px;
+        color: #808080;
+        font-size: 12px;
+        border: 1px solid #E6EAF0;
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
