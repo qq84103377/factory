@@ -18,7 +18,7 @@
     "yl": "cross-env NODE_ENV=yl node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "echarts": "^4.0.2",
     "element-ui": "^1.2.8",
